@@ -38,13 +38,13 @@ public class Sketch extends PApplet {
     noFill();
 
     // draw bottom row boxes
-    rect(0,300, 300, 300);
+    rect(0, 300, 300, 300);
     rect(300, 300, 300, 300);
     rect(600, 300, 300, 300);
     rect(900, 300, 300, 300);
 
     // draw top row boxes
-    rect(0,0, 300, 300);
+    rect(0, 0, 300, 300);
     rect(300, 0, 300, 300);
     rect(600, 0, 300, 300);
     rect(900, 0, 300, 300);
@@ -135,7 +135,28 @@ public class Sketch extends PApplet {
    * Use the modulus operator and just one 'if' statement to select the color.
    */
   public void draw_section4(){
+    int sectionFourX = 0;
+    int sectionFourY = 0;
 
+    for(int sectionFourRow = 0; sectionFourRow < 30; sectionFourRow++){
+      for(int sectionFourColumn = 0; sectionFourColumn < 30; sectionFourColumn++){
+
+        sectionFourX = 3 + 900 + sectionFourRow * 300 / 30;
+        sectionFourY = 3 + 300 + sectionFourColumn * 300 / 30;
+
+        if(sectionFourColumn % 2 != 0 && sectionFourRow % 2 == 0){
+
+          fill(255);
+          noStroke();
+          rect(sectionFourX, sectionFourY, 5, 5);
+        } else {
+
+          fill(0);
+          noStroke();
+          rect(sectionFourX, sectionFourY, 5, 5);
+        }
+      }
+    }
   }
 
   /**
