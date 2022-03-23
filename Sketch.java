@@ -76,25 +76,25 @@ public class Sketch extends PApplet {
    */
   public void draw_section2(){
 
-    int sectTwoX = 0;
-    int sectTwoY = 0;
+    int sectionTwoX = 0;
+    int sectionTwoY = 0;
 
-    for(int sectTwoRow = 0; sectTwoRow < 30; sectTwoRow++){
-      for(int sectTwoColumn = 0; sectTwoColumn < 30; sectTwoColumn++){
+    for(int sectionTwoRow = 0; sectionTwoRow < 30; sectionTwoRow++){
+      for(int sectionTwoColumn = 0; sectionTwoColumn < 30; sectionTwoColumn++){
 
-        sectTwoX = 3 + 300 + sectTwoRow * 300 / 30;
-        sectTwoY = 3 + 300 + sectTwoColumn * 300 / 30;
+        sectionTwoX = 3 + 300 + sectionTwoRow * 300 / 30;
+        sectionTwoY = 3 + 300 + sectionTwoColumn * 300 / 30;
 
-        if(sectTwoRow % 2 == 0){
+        if(sectionTwoRow % 2 == 0){
 
           fill(255);
           noStroke();
-          rect(sectTwoX, sectTwoY, 5, 5);
+          rect(sectionTwoX, sectionTwoY, 5, 5);
         } else {
 
           fill(0);
           noStroke();
-          rect(sectTwoX, sectTwoY, 5, 5);
+          rect(sectionTwoX, sectionTwoY, 5, 5);
         }
       }
     }
