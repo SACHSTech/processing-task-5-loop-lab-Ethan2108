@@ -17,7 +17,7 @@ public class Sketch extends PApplet {
   
   public void draw() {
 	  
-    
+
     draw_section_outlines();
     draw_section1();
     draw_section2();
@@ -33,9 +33,6 @@ public class Sketch extends PApplet {
   }
 
 
-  /**
-   * Draw the outlines for all sections
-   */
   public void draw_section_outlines(){
     stroke(0);
     noFill();
@@ -78,6 +75,29 @@ public class Sketch extends PApplet {
    * Don't loop from 30 to 60 to shift everything over, just add 300 to x.
    */
   public void draw_section2(){
+
+    int sectTwoX = 0;
+    int sectTwoY = 0;
+
+    for(int sectTwoRow = 0; sectTwoRow < 30; sectTwoRow++){
+      for(int sectTwoColumn = 0; sectTwoColumn < 30; sectTwoColumn++){
+
+        sectTwoX = 3 + 300 + sectTwoRow * 300 / 30;
+        sectTwoY = 3 + 300 + sectTwoColumn * 300 / 30;
+
+        if(sectTwoRow % 2 == 0){
+
+          fill(255);
+          noStroke();
+          rect(sectTwoX, sectTwoY, 5, 5);
+        } else {
+
+          fill(0);
+          noStroke();
+          rect(sectTwoX, sectTwoY, 5, 5);
+        }
+      }
+    }
 
   }
 
