@@ -107,6 +107,28 @@ public class Sketch extends PApplet {
    */
   public void draw_section3(){
 
+    int sectionThreeX = 0;
+    int sectionThreeY = 0;
+
+    for(int sectionThreeRow = 0; sectionThreeRow < 30; sectionThreeRow++){
+      for(int sectionThreeColumn = 0; sectionThreeColumn < 30; sectionThreeColumn++){
+
+        sectionThreeX = 3 + 600 + sectionThreeRow * 300 / 30;
+        sectionThreeY = 3 + 300 + sectionThreeColumn * 300 / 30;
+
+        if(sectionThreeColumn % 2 == 0){
+
+          fill(0);
+          noStroke();
+          rect(sectionThreeX, sectionThreeY, 5, 5);
+        } else {
+
+          fill(255);
+          noStroke();
+          rect(sectionThreeX, sectionThreeY, 5, 5);
+        }
+      }
+    }
   }
 
   /**
