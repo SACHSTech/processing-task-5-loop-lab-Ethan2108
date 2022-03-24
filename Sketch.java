@@ -16,7 +16,7 @@ public class Sketch extends PApplet {
 
   
   public void draw() {
-	  
+
 
     draw_section_outlines();
     draw_section1();
@@ -62,7 +62,7 @@ public class Sketch extends PApplet {
         intX = 3 + intRow * 300 / 30;  //Instead of zero, calculate the proper intX location using 'intRow'
         intY = 3 + 300 + intColumn * 300 / 30; //Instead of zero, calculate the proper intY location using 'intColumn'
 
-        fill(255);
+        fill(255, 255, 255);
         noStroke();
         rect(intX, intY, 5, 5);
 
@@ -87,12 +87,12 @@ public class Sketch extends PApplet {
 
         if(sectionTwoRow % 2 == 0){
 
-          fill(255);
+          fill(255, 255, 255);
           noStroke();
           rect(sectionTwoX, sectionTwoY, 5, 5);
         } else {
 
-          fill(0);
+          fill(0, 0, 0);
           noStroke();
           rect(sectionTwoX, sectionTwoY, 5, 5);
         }
@@ -118,12 +118,12 @@ public class Sketch extends PApplet {
 
         if(sectionThreeColumn % 2 == 0){
 
-          fill(0);
+          fill(0, 0, 0);
           noStroke();
           rect(sectionThreeX, sectionThreeY, 5, 5);
         } else {
 
-          fill(255);
+          fill(255, 255, 255);
           noStroke();
           rect(sectionThreeX, sectionThreeY, 5, 5);
         }
@@ -146,12 +146,12 @@ public class Sketch extends PApplet {
 
         if(sectionFourColumn % 2 <= 0 && sectionFourRow % 2 == 0){
 
-          fill(255);
+          fill(255, 255, 255);
           noStroke();
           rect(sectionFourX, sectionFourY, 5, 5);
         } else {
 
-          fill(0);
+          fill(0, 0, 0);
           noStroke();
           rect(sectionFourX, sectionFourY, 5, 5);
         }
@@ -175,7 +175,7 @@ public class Sketch extends PApplet {
         sectionFiveX = 3 - 10 + sectionFiveRow * 300 / 30 ;
         sectionFiveY = 3 + sectionFiveColumn * 300 / 30;
 
-        fill(255);
+        fill(255, 255, 255);
         noStroke();
         rect(sectionFiveX, sectionFiveY, 5, 5);
       }
@@ -196,7 +196,7 @@ public class Sketch extends PApplet {
         sectionSixX = 3 + 300 + sectionSixRow * 300 / 30;
         sectionSixY = 3 - 10 + sectionSixColumn * 300 / 30;
 
-        fill(255);
+        fill(255, 255, 255);
         noStroke();
         rect(sectionSixX, sectionSixY, 5, 5);
       }
@@ -217,7 +217,7 @@ public class Sketch extends PApplet {
         sectionSevenX = 3 + 600 + sectionSevenRow * 300 / 30;
         sectionSevenY = 3 + sectionSevenColumn * 300 / 30;
 
-        fill(255);
+        fill(255, 255, 255);
         noStroke();
         rect(sectionSevenX, sectionSevenY, 5, 5);
       }
@@ -239,7 +239,7 @@ public class Sketch extends PApplet {
         sectionEightX = 3 - 10 + 900 + sectionEightRow * 300 / 30;
         sectionEightY = 3 + sectionEightColumn * 300 / 30;
 
-        fill(255);
+        fill(255, 255, 255);
         noStroke();
         rect(sectionEightX, sectionEightY, 5, 5);
       }
@@ -251,5 +251,5 @@ public class Sketch extends PApplet {
 
 
 
-  
+
   }
