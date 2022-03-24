@@ -166,11 +166,11 @@ public class Sketch extends PApplet {
 
     int sectionFiveX = 0;
     int sectionFiveY = 0;
-    int fiveRows = 0;
-    int fiveColumns = 0;
+    int sectionfiveRows = 0;
+    int sectionfiveColumns = 0;
 
-    for(int sectionFiveColumn = 30; sectionFiveColumn > fiveColumns; sectionFiveColumn--){
-      for(int sectionFiveRow = 30; sectionFiveRow > fiveRows; sectionFiveRow--){
+    for(int sectionFiveColumn = 30; sectionFiveColumn > sectionfiveColumns; sectionFiveColumn--){
+      for(int sectionFiveRow = 30; sectionFiveRow > sectionfiveRows; sectionFiveRow--){
 
         sectionFiveX = 3 - 10 + sectionFiveRow * 300 / 30 ;
         sectionFiveY = 3 + sectionFiveColumn * 300 / 30;
@@ -179,25 +179,77 @@ public class Sketch extends PApplet {
         noStroke();
         rect(sectionFiveX, sectionFiveY, 5, 5);
       }
-      fiveRows += 1;
+      sectionfiveRows += 1;
     }
   }
 
   public void draw_section6(){
 
+    int sectionSixX = 0;
+    int sectionSixY = 0;
+    int sectionsixRows = 30;
+    int sectionsixColumns = 0;
+
+    for(int sectionSixColumn = 30; sectionSixColumn > sectionsixColumns; sectionSixColumn--){
+      for(int sectionSixRow = 0; sectionSixRow < sectionsixRows; sectionSixRow++){
+
+        sectionSixX = 3 + 300 + sectionSixRow * 300 / 30;
+        sectionSixY = 3 - 10 + sectionSixColumn * 300 / 30;
+
+        fill(255);
+        noStroke();
+        rect(sectionSixX, sectionSixY, 5, 5);
+      }
+      sectionsixRows -= 1;
+    }
   }
 
   public void draw_section7(){
 
+    int sectionSevenX = 0;
+    int sectionSevenY = 0;
+    int sectionsevenRows = 30;
+    int sectionsevenColumns = 30;
+
+    for(int sectionSevenColumn = 0; sectionSevenColumn < sectionsevenColumns; sectionSevenColumn++){
+      for(int sectionSevenRow = 0; sectionSevenRow < sectionsevenRows; sectionSevenRow++){
+
+        sectionSevenX = 3 + 600 + sectionSevenRow * 300 / 30;
+        sectionSevenY = 3 + sectionSevenColumn * 300 / 30;
+
+        fill(255);
+        noStroke();
+        rect(sectionSevenX, sectionSevenY, 5, 5);
+      }
+      sectionsevenRows -= 1;
+    }
   }
   
   public void draw_section8(){
 
+    
+    int sectionEightX = 0;
+    int sectionEightY = 0;
+    int sectioneightRows = 0;
+    int sectioneightColumns = 30;
+
+    for(int sectionEightColumn = 0; sectionEightColumn < sectioneightColumns; sectionEightColumn++){
+      for(int sectionEightRow = 30; sectionEightRow > sectioneightRows; sectionEightRow--){
+
+        sectionEightX = 3 - 10 + 900 + sectionEightRow * 300 / 30;
+        sectionEightY = 3 + sectionEightColumn * 300 / 30;
+
+        fill(255);
+        noStroke();
+        rect(sectionEightX, sectionEightY, 5, 5);
+      }
+      sectioneightRows += 1;
+    }
   }
 
 
 
 
 
-
-}
+  
+  }
