@@ -144,7 +144,7 @@ public class Sketch extends PApplet {
         sectionFourX = 3 + 900 + sectionFourRow * 300 / 30;
         sectionFourY = 3 + 300 + sectionFourColumn * 300 / 30;
 
-        if(sectionFourColumn % 2 != 0 && sectionFourRow % 2 == 0){
+        if(sectionFourColumn % 2 <= 0 && sectionFourRow % 2 == 0){
 
           fill(255);
           noStroke();
@@ -164,6 +164,23 @@ public class Sketch extends PApplet {
    */
   public void draw_section5(){
 
+    int sectionFiveX = 0;
+    int sectionFiveY = 0;
+    int fiveRows = 0;
+    int fiveColumns = 0;
+
+    for(int sectionFiveColumn = 30; sectionFiveColumn > fiveColumns; sectionFiveColumn--){
+      for(int sectionFiveRow = 30; sectionFiveRow > fiveRows; sectionFiveRow--){
+
+        sectionFiveX = 3 - 10 + sectionFiveRow * 300 / 30 ;
+        sectionFiveY = 3 + sectionFiveColumn * 300 / 30;
+
+        fill(255);
+        noStroke();
+        rect(sectionFiveX, sectionFiveY, 5, 5);
+      }
+      fiveRows += 1;
+    }
   }
 
   public void draw_section6(){
