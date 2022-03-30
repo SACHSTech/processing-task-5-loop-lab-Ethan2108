@@ -159,7 +159,7 @@ public class Sketch extends PApplet {
     }
   }
 
-  /**
+  /*
    * Do NOT use 'if' statements to complete 5-8. Manipulate the loops instead
    */
   public void draw_section5(){
